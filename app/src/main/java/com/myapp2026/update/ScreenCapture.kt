@@ -41,7 +41,7 @@ object ScreenCapture {
         }, null)
 
         latch.await(5, TimeUnit.SECONDS)
-        vd.release(); reader.close()
+        vd?.release(); reader.close()
         return bmp
     }
 }
